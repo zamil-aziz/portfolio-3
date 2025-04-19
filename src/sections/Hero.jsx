@@ -1,4 +1,6 @@
+import Button from '../components/Button';
 import { words } from '../constants';
+
 const Hero = () => {
     return (
         <section id='hero' className='relative overflow-hidden'>
@@ -27,8 +29,13 @@ const Hero = () => {
                                     </span>
                                 </span>
                             </h1>
+
                             <h1>into Real Project</h1>
                             <h1>that Deliver Results</h1>
+                            <p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
+                                Hi, I'm Zamil, a FullStack Software Developer
+                            </p>
+                            <Button className='md:w-80 md:h-16 w-60 h-12' id='button' text='See my Work' />
                         </div>
                     </div>
                 </header>
