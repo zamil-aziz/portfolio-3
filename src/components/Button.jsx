@@ -3,7 +3,7 @@ const Button = ({ text, className, id }) => {
         <a
             onClick={e => {
                 e.preventDefault();
-                const target = document.querySelector('conter');
+                const target = document.querySelector('#counter');
 
                 if (target) {
                     const offset = window.innerHeight * 0.15;
