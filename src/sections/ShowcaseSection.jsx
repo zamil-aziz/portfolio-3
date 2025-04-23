@@ -57,11 +57,7 @@ const ShowcaseSection = () => {
                                 />
                             </div>
                             <div className='mt-4 space-y-3'>
-                                <div className='flex gap-2'>
-                                    <span className='hero-badge'>React</span>
-                                    <span className='hero-badge'>GSAP</span>
-                                </div>
-                                <h3 className='text-2xl md:text-3xl font-bold'>Featured Project</h3>
+                                <h2 className='text-2xl md:text-3xl font-bold'>Project One</h2>
                                 <p className='text-white-50'>
                                     Comprehensive description of the featured project showcasing its key features and
                                     technologies.
@@ -82,8 +78,7 @@ const ShowcaseSection = () => {
                                 />
                             </div>
                             <div className='mt-3'>
-                                <span className='hero-badge'>UI/UX</span>
-                                <h3 className='text-lg md:text-xl font-bold mt-2'>Project Two</h3>
+                                <h2 className='text-lg md:text-xl font-bold mt-2'>Project Two</h2>
                             </div>
                         </div>
 
@@ -97,8 +92,7 @@ const ShowcaseSection = () => {
                                 />
                             </div>
                             <div className='mt-3'>
-                                <span className='hero-badge'>Mobile</span>
-                                <h3 className='text-lg md:text-xl font-bold mt-2'>Project Three</h3>
+                                <h2 className='text-lg md:text-xl font-bold mt-2'>Project Three</h2>
                             </div>
                         </div>
 
@@ -112,8 +106,7 @@ const ShowcaseSection = () => {
                                 />
                             </div>
                             <div className='mt-3'>
-                                <span className='hero-badge'>Web App</span>
-                                <h3 className='text-lg md:text-xl font-bold mt-2'>Project Four</h3>
+                                <h2 className='text-lg md:text-xl font-bold mt-2'>Project Four</h2>
                             </div>
                         </div>
 
@@ -127,8 +120,7 @@ const ShowcaseSection = () => {
                                 />
                             </div>
                             <div className='mt-3'>
-                                <span className='hero-badge'>Landing Page</span>
-                                <h3 className='text-lg md:text-xl font-bold mt-2'>Project Five</h3>
+                                <h2 className='text-lg md:text-xl font-bold mt-2'>Project Five</h2>
                             </div>
                         </div>
                     </div>
