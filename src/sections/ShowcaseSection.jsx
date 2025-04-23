@@ -7,25 +7,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ShowcaseSection = () => {
     const sectionRef = useRef(null);
-    const project1Ref = useRef(null);
-    const project2Ref = useRef(null);
-    const project3Ref = useRef(null);
+    const projectRefs = [
+        useRef(null), // featured project
+        useRef(null), // project 2
+        useRef(null), // project 3
+        useRef(null), // project 4
+        useRef(null), // project 5
+    ];
 
     useGSAP(() => {
-        const projects = [project1Ref.current, project2Ref.current, project3Ref.current];
-
-        projects.forEach((card, index) => {
-            if (card) {
+        // Animate each project card with staggered delay
+        projectRefs.forEach((ref, index) => {
+            if (ref.current) {
                 gsap.fromTo(
-                    card,
+                    ref.current,
                     { y: 50, opacity: 0 },
                     {
                         y: 0,
                         opacity: 1,
                         duration: 1,
-                        delay: 0.3 * (index + 1),
+                        delay: 0.2 * (index + 1),
                         scrollTrigger: {
-                            trigger: card,
+                            trigger: ref.current,
                             start: 'top bottom-=100',
                         },
                     }
@@ -33,40 +36,99 @@ const ShowcaseSection = () => {
             }
         });
 
-        // Section animation
+        // Section fade in animation
         gsap.fromTo(sectionRef.current, { opacity: 0 }, { opacity: 1, duration: 1.5 });
     }, []);
 
     return (
         <section id='work' ref={sectionRef} className='app-showcase'>
             <div className='w-full'>
-                <div className='showcaselayout'>
-                    {/* LEFT */}
-                    <div className='first-project-wrapper' ref={project1Ref}>
-                        <div className='image-wrapper'>
-                            <img src='/images/project1.png' alt='Project 1' />
-                        </div>
-                        <div className='text-content'>
-                            <h2>Project Title</h2>
-                            <p>Project desc</p>
+                <h2 className='text-3xl md:text-4xl font-bold mb-8'>Featured Projects</h2>
+
+                <div className='grid grid-cols-1 xl:grid-cols-12 gap-8'>
+                    {/* Featured Project (Spans 6 columns) */}
+                    <div className='xl:col-span-6' ref={projectRefs[0]}>
+                        <div className='h-full flex flex-col'>
+                            <div className='image-wrapper h-96 md:h-[50vh] xl:h-[60vh] relative rounded-xl overflow-hidden'>
+                                <img
+                                    src='/images/project1.png'
+                                    alt='Featured Project'
+                                    className='w-full h-full object-cover'
+                                />
+                            </div>
+                            <div className='mt-4 space-y-3'>
+                                <div className='flex gap-2'>
+                                    <span className='hero-badge'>React</span>
+                                    <span className='hero-badge'>GSAP</span>
+                                </div>
+                                <h3 className='text-2xl md:text-3xl font-bold'>Featured Project</h3>
+                                <p className='text-white-50'>
+                                    Comprehensive description of the featured project showcasing its key features and
+                                    technologies.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    {/* RIGHT */}
-                    <div className='project-list-wrapper overflow-hidden'>
-                        <div className='project' ref={project2Ref}>
-                            <div className='image-wrapper bg-[#ffefdb]'>
-                                <img src='/images/project2.png' alt='Project 2' />
+
+                    {/* Secondary Projects Grid (Spans 6 columns) */}
+                    <div className='xl:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-6'>
+                        {/* Project 2 */}
+                        <div className='project-card' ref={projectRefs[1]}>
+                            <div className='image-wrapper h-64 md:h-52 relative rounded-xl overflow-hidden bg-[#ffefdb]'>
+                                <img
+                                    src='/images/project2.png'
+                                    alt='Project 2'
+                                    className='w-full h-full object-contain p-4'
+                                />
                             </div>
-                            <div className='text-content'>
-                                <h2>Project Title</h2>
+                            <div className='mt-3'>
+                                <span className='hero-badge'>UI/UX</span>
+                                <h3 className='text-lg md:text-xl font-bold mt-2'>Project Two</h3>
                             </div>
                         </div>
-                        <div className='project' ref={project3Ref}>
-                            <div className='image-wrapper bg-[#ffe7eb]'>
-                                <img src='/images/project3.png' alt='Project 3' />
+
+                        {/* Project 3 */}
+                        <div className='project-card' ref={projectRefs[2]}>
+                            <div className='image-wrapper h-64 md:h-52 relative rounded-xl overflow-hidden bg-[#ffe7eb]'>
+                                <img
+                                    src='/images/project3.png'
+                                    alt='Project 3'
+                                    className='w-full h-full object-contain p-4'
+                                />
                             </div>
-                            <div className='text-content'>
-                                <h2>Project Title</h2>
+                            <div className='mt-3'>
+                                <span className='hero-badge'>Mobile</span>
+                                <h3 className='text-lg md:text-xl font-bold mt-2'>Project Three</h3>
+                            </div>
+                        </div>
+
+                        {/* Project 4 */}
+                        <div className='project-card' ref={projectRefs[3]}>
+                            <div className='image-wrapper h-64 md:h-52 relative rounded-xl overflow-hidden bg-[#e7f5ff]'>
+                                <img
+                                    src='/images/project2.png'
+                                    alt='Project 4'
+                                    className='w-full h-full object-contain p-4'
+                                />
+                            </div>
+                            <div className='mt-3'>
+                                <span className='hero-badge'>Web App</span>
+                                <h3 className='text-lg md:text-xl font-bold mt-2'>Project Four</h3>
+                            </div>
+                        </div>
+
+                        {/* Project 5 */}
+                        <div className='project-card' ref={projectRefs[4]}>
+                            <div className='image-wrapper h-64 md:h-52 relative rounded-xl overflow-hidden bg-[#ebfff1]'>
+                                <img
+                                    src='/images/project3.png'
+                                    alt='Project 5'
+                                    className='w-full h-full object-contain p-4'
+                                />
+                            </div>
+                            <div className='mt-3'>
+                                <span className='hero-badge'>Landing Page</span>
+                                <h3 className='text-lg md:text-xl font-bold mt-2'>Project Five</h3>
                             </div>
                         </div>
                     </div>
