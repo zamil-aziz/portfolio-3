@@ -67,7 +67,7 @@ const ShowcaseSection = () => {
                         </div>
                     </div>
 
-                    {/* Secondary Projects Grid (Spans 6 columns) */}
+                    {/* Secondary Projects Grid */}
                     <div className='xl:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-6'>
                         {/* Project 2 */}
                         <div className='project-card' ref={projectRefs[1]}>
@@ -75,7 +75,7 @@ const ShowcaseSection = () => {
                                 <img
                                     src='/images/project2.png'
                                     alt='Project 2'
-                                    className='w-full h-full object-contain p-4 border-2'
+                                    className='w-full h-full object-contain p-4'
                                 />
                             </div>
                             <div className='mt-3'>
