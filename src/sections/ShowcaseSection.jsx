@@ -71,7 +71,7 @@ const ShowcaseSection = () => {
                     <div className='xl:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-6'>
                         {/* Project 2 */}
                         <div className='project-card' ref={projectRefs[1]}>
-                            <div className='image-wrapper h-64 md:h-52 relative rounded-xl overflow-hidden bg-[#ffefdb]'>
+                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a]'>
                                 <img
                                     src='/images/project2.png'
                                     alt='Project 2'
@@ -85,7 +85,7 @@ const ShowcaseSection = () => {
 
                         {/* Project 3 */}
                         <div className='project-card' ref={projectRefs[2]}>
-                            <div className='image-wrapper h-64 md:h-52 relative rounded-xl overflow-hidden bg-[#ffe7eb]'>
+                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a]'>
                                 <img
                                     src='/images/project3.png'
                                     alt='Project 3'
@@ -99,7 +99,7 @@ const ShowcaseSection = () => {
 
                         {/* Project 4 */}
                         <div className='project-card' ref={projectRefs[3]}>
-                            <div className='image-wrapper h-64 md:h-52 relative rounded-xl overflow-hidden bg-[#e7f5ff]'>
+                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a]'>
                                 <img
                                     src='/images/project4.png'
                                     alt='Project 4'
@@ -113,7 +113,7 @@ const ShowcaseSection = () => {
 
                         {/* Project 5 */}
                         <div className='project-card' ref={projectRefs[4]}>
-                            <div className='image-wrapper h-64 md:h-52 relative rounded-xl overflow-hidden bg-[#ebfff1]'>
+                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a]'>
                                 <img
                                     src='/images/project5.png'
                                     alt='Project 5'
