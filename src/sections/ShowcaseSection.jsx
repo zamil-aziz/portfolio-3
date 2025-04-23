@@ -49,18 +49,19 @@ const ShowcaseSection = () => {
                     {/* Featured Project (Spans 6 columns) */}
                     <div className='xl:col-span-6' ref={projectRefs[0]}>
                         <div className='h-full flex flex-col'>
-                            <div className='image-wrapper h-96 md:h-[50vh] xl:h-[60vh] relative rounded-xl overflow-hidden'>
+                            <div className='image-wrapperrelative overflow-hidden rounded-xl'>
                                 <img
                                     src='/images/project1.png'
                                     alt='Featured Project'
-                                    className='w-full h-full object-cover'
+                                    className='w-full h-full object-contain'
                                 />
                             </div>
                             <div className='mt-4 space-y-3'>
                                 <h2 className='text-2xl md:text-3xl font-bold'>Project One</h2>
                                 <p className='text-white-50'>
-                                    Comprehensive description of the featured project showcasing its key features and
-                                    technologies.
+                                    This is a brief description of the featured project. It showcases the main features
+                                    and functionalities of the project, highlighting its unique aspects and what makes
+                                    it stand out.
                                 </p>
                             </div>
                         </div>
@@ -74,7 +75,7 @@ const ShowcaseSection = () => {
                                 <img
                                     src='/images/project2.png'
                                     alt='Project 2'
-                                    className='w-full h-full object-contain p-4'
+                                    className='w-full h-full object-contain p-4 border-2'
                                 />
                             </div>
                             <div className='mt-3'>
@@ -100,7 +101,7 @@ const ShowcaseSection = () => {
                         <div className='project-card' ref={projectRefs[3]}>
                             <div className='image-wrapper h-64 md:h-52 relative rounded-xl overflow-hidden bg-[#e7f5ff]'>
                                 <img
-                                    src='/images/project2.png'
+                                    src='/images/project4.png'
                                     alt='Project 4'
                                     className='w-full h-full object-contain p-4'
                                 />
@@ -114,7 +115,7 @@ const ShowcaseSection = () => {
                         <div className='project-card' ref={projectRefs[4]}>
                             <div className='image-wrapper h-64 md:h-52 relative rounded-xl overflow-hidden bg-[#ebfff1]'>
                                 <img
-                                    src='/images/project3.png'
+                                    src='/images/project5.png'
                                     alt='Project 5'
                                     className='w-full h-full object-contain p-4'
                                 />
