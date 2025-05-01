@@ -136,8 +136,8 @@ const techStackIcons = [
 const expCards = [
     {
         review: 'Zamil brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.',
-        imgPath: '/images/exp1.png',
-        logoPath: '/images/exp1.png',
+        imgPath: '/images/exp1.jpeg',
+        logoPath: '/images/exp1.jpeg',
         title: 'Frontend Developer',
         date: 'January 2023 - Present',
         responsibilities: [
@@ -148,8 +148,8 @@ const expCards = [
     },
     {
         review: "Zamil’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-        imgPath: '/images/exp2.png',
-        logoPath: '/images/exp2.png',
+        imgPath: '/images/exp2.jpg',
+        logoPath: '/images/exp2.jpg',
         title: 'Full Stack Developer',
         date: 'June 2020 - December 2023',
         responsibilities: [
