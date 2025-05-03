@@ -185,28 +185,23 @@ const expLogos = [
 
 const socialImgs = [
     {
-        name: 'insta',
-        url: 'https://www.instagram.com/',
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/zamil-aziz/',
         imgPath: '/images/linkedin.png',
     },
     {
-        name: 'fb',
-        url: 'https://www.facebook.com/',
+        name: 'github',
+        url: 'https://github.com/zamil-aziz/',
         imgPath: '/images/github.png',
     },
     {
         name: 'x',
-        url: 'https://www.x.com/',
+        url: 'https://x.com/zamilaziz2/',
         imgPath: '/images/x.png',
     },
     {
-        name: 'linkedin',
-        url: 'https://www.linkedin.com/',
-        imgPath: '/images/discord.png',
-    },
-    {
-        name: 'linkedin',
-        url: 'https://www.linkedin.com/',
+        name: 'strava',
+        url: 'https://www.strava.com/athletes/112389118/',
         imgPath: '/images/strava.png',
     },
 ];
