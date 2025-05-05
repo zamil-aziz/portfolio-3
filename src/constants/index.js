@@ -136,7 +136,7 @@ const expCards = [
         imgPath: '/images/exp1.jpeg',
         logoPath: '/images/exp1.jpeg',
         title: 'Full Stack Web Developer',
-        date: 'June 2022 – December 2022',
+        date: 'April 2024 – Present',
         responsibilities: [
             'Built and maintained full-stack web applications using React/Next.js.',
             'Created and integrated RESTful and GraphQL APIs for scalable solutions.',
@@ -147,11 +147,12 @@ const expCards = [
     },
     {
         lessons:
-            'Zamil consistently demonstrated professionalism and excellent interpersonal skills while handling customer service operations. His ability to resolve issues promptly made him a valuable asset to the team.',
+            'Learned how to communicate effectively and professionally with a wide range of customers. I also developed strong problem-solving skills by handling challenging inquiries and complaints, and gained valuable experience working closely with different teams to deliver seamless service.',
+
         imgPath: '/images/exp2.jpg',
         logoPath: '/images/exp2.jpg',
         title: 'Customer Service Executive',
-        date: 'June 2020 - December 2023',
+        date: 'July 2022 - April 2024',
         responsibilities: [
             'Managed customer inquiries and complaints with efficiency and empathy.',
             'Collaborated with cross-functional teams to ensure smooth service delivery.',
@@ -160,15 +161,17 @@ const expCards = [
     },
     {
         lessons:
-            'Zamil’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.',
+            'Developed strong strategic thinking, teamwork, and adaptability by competing at national and international esports tournaments. These high-pressure environments helped sharpen my decision-making and leadership skills, which now support my work in tech and development.',
         imgPath: '/images/exp3.png',
         logoPath: '/images/exp3.png',
-        title: 'React Native Developer',
-        date: 'March 2019 - May 2020',
+        title: 'Professional Esports Competitor',
+        date: '2010 – 2022',
         responsibilities: [
-            "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-            'Improved app performance and user experience through code optimization and testing.',
-            'Coordinated with the product team to implement features based on feedback.',
+            'Competed in national and international esports tournaments including PUBG, DOTA 2, StarCraft 2 and HearthStone.',
+            'Achieved 2nd place at Malaysia AOC Battle of the Visionaries.',
+            'Developed advanced problem-solving and strategic thinking skills under pressure.',
+            'Worked closely with team members to analyze gameplay, devise tactics, and execute coordinated strategies.',
+            'Translated esports-honed discipline and focus into software development and project execution.',
         ],
     },
 ];
