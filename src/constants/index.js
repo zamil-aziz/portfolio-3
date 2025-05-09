@@ -53,6 +53,15 @@ const logoIconsList = [
     {
         imgPath: '/images/logos/company-logo-7.png',
     },
+    {
+        imgPath: '/images/logos/company-logo-8.png',
+    },
+    {
+        imgPath: '/images/logos/company-logo-9.png',
+    },
+    {
+        imgPath: '/images/logos/company-logo-10.png',
+    },
 ];
 
 const abilities = [
