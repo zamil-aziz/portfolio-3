@@ -45,18 +45,19 @@ const ShowcaseSection = () => {
             <div className='w-full'>
                 <h2 className='text-3xl md:text-4xl font-bold mb-8'>Featured Projects</h2>
 
+                {/* Use flex to ensure equal height across main columns */}
                 <div className='grid grid-cols-1 xl:grid-cols-12 gap-8'>
                     {/* Featured Project (Spans 6 columns) */}
-                    <div className='xl:col-span-6' ref={projectRefs[0]}>
-                        <div className='h-full flex flex-col'>
-                            <div className='image-wrapperrelative overflow-hidden rounded-xl'>
+                    <div className='xl:col-span-6 h-full flex' ref={projectRefs[0]}>
+                        <div className='h-full flex flex-col w-full'>
+                            <div className='image-wrapper relative overflow-hidden rounded-xl flex-grow-0'>
                                 <img
                                     src='/images/project1.png'
                                     alt='Featured Project'
                                     className='w-full h-full object-contain'
                                 />
                             </div>
-                            <div className='mt-4 space-y-3'>
+                            <div className='mt-4 space-y-3 flex-grow'>
                                 <h2 className='text-2xl md:text-3xl font-bold'>Project One</h2>
                                 <p className='text-white-50'>
                                     This is a brief description of the featured project. It showcases the main features
@@ -68,60 +69,76 @@ const ShowcaseSection = () => {
                     </div>
 
                     {/* Secondary Projects Grid */}
-                    <div className='xl:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-6'>
+                    <div className='xl:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-6 h-full'>
                         {/* Project 2 */}
-                        <div className='project-card' ref={projectRefs[1]}>
-                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a]'>
+                        <div className='project-card h-full flex flex-col' ref={projectRefs[1]}>
+                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a] flex-grow-0'>
                                 <img
                                     src='/images/project2.png'
                                     alt='Project 2'
                                     className='w-full h-full object-contain p-4'
                                 />
                             </div>
-                            <div className='mt-3'>
+                            <div className='mt-3 flex-grow flex flex-col'>
                                 <h2 className='text-lg md:text-xl font-bold mt-2'>Project Two</h2>
+                                <p className='text-sm text-white-50 mt-2 line-clamp-3'>
+                                    A streamlined application that helps users manage their daily tasks with intuitive
+                                    interface and smart automation.
+                                </p>
                             </div>
                         </div>
 
                         {/* Project 3 */}
-                        <div className='project-card' ref={projectRefs[2]}>
-                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a]'>
+                        <div className='project-card h-full flex flex-col' ref={projectRefs[2]}>
+                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a] flex-grow-0'>
                                 <img
                                     src='/images/project3.png'
                                     alt='Project 3'
                                     className='w-full h-full object-contain p-4'
                                 />
                             </div>
-                            <div className='mt-3'>
+                            <div className='mt-3 flex-grow flex flex-col'>
                                 <h2 className='text-lg md:text-xl font-bold mt-2'>Project Three</h2>
+                                <p className='text-sm text-white-50 mt-2 line-clamp-3'>
+                                    An innovative solution that provides real-time analytics and insightful data
+                                    visualization for business intelligence.
+                                </p>
                             </div>
                         </div>
 
                         {/* Project 4 */}
-                        <div className='project-card' ref={projectRefs[3]}>
-                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a]'>
+                        <div className='project-card h-full flex flex-col' ref={projectRefs[3]}>
+                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a] flex-grow-0'>
                                 <img
                                     src='/images/project4.png'
                                     alt='Project 4'
                                     className='w-full h-full object-contain p-4'
                                 />
                             </div>
-                            <div className='mt-3'>
+                            <div className='mt-3 flex-grow flex flex-col'>
                                 <h2 className='text-lg md:text-xl font-bold mt-2'>Project Four</h2>
+                                <p className='text-sm text-white-50 mt-2 line-clamp-3'>
+                                    A responsive web application that delivers personalized content to users based on
+                                    their preferences and browsing history.
+                                </p>
                             </div>
                         </div>
 
                         {/* Project 5 */}
-                        <div className='project-card' ref={projectRefs[4]}>
-                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a]'>
+                        <div className='project-card h-full flex flex-col' ref={projectRefs[4]}>
+                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a] flex-grow-0'>
                                 <img
                                     src='/images/project5.png'
                                     alt='Project 5'
                                     className='w-full h-full object-contain p-4'
                                 />
                             </div>
-                            <div className='mt-3'>
+                            <div className='mt-3 flex-grow flex flex-col'>
                                 <h2 className='text-lg md:text-xl font-bold mt-2'>Project Five</h2>
+                                <p className='text-sm text-white-50 mt-2 line-clamp-3'>
+                                    An immersive interactive experience that combines stunning visuals with engaging
+                                    user interactions.
+                                </p>
                             </div>
                         </div>
                     </div>
