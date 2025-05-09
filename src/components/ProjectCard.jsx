@@ -8,7 +8,7 @@ const ProjectCard = ({ project, forwardedRef }) => {
             </div>
             <div className='mt-3 flex-grow flex flex-col'>
                 <h2 className='text-lg md:text-xl font-bold mt-2'>{project.title}</h2>
-                <p className='text-sm text-white-50 mt-2 line-clamp-3'>{project.description}</p>
+                <p className='text-sm text-white-50 mt-2 line-clamp-6'>{project.description}</p>
             </div>
         </div>
     );

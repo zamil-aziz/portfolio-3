@@ -231,41 +231,42 @@ const socialImgs = [
 const projectsData = [
     {
         id: 1,
-        title: 'Project One',
+        title: 'Eventlah',
         description:
-            'This is a brief description of the featured project. It showcases the main features and functionalities of the project, highlighting its unique aspects and what makes it stand out.',
+            'A comprehensive event management portal that enables merchants, administrators, and agents to efficiently manage events, ticket sales, and performance tracking. The portal features tailored user interfaces, real-time analytics, QR ticket scanning, and customizable event pages, all within a modern React-based interface. Working closely with a senior developer, I played a significant role in implementing core functionalities and delivering a high-quality product.',
         imagePath: '/images/project1.png',
         isFeatured: true,
     },
     {
         id: 2,
-        title: 'Project Two',
+        title: 'Photobooth App',
         description:
-            'A streamlined application that helps users manage their daily tasks with intuitive interface and smart automation.',
+            'A fully client-side kiosk photobooth app that enables users to capture, edit, and enhance photos with fun filters and effects. Optimized for touchscreens and event use, it runs entirely in the browser without the need for a backend, ensuring fast and offline-friendly performance.',
+
         imagePath: '/images/project2.png',
         isFeatured: false,
     },
     {
         id: 3,
-        title: 'Project Three',
+        title: 'MyDuitApp',
         description:
-            'An innovative solution that provides real-time analytics and insightful data visualization for business intelligence.',
+            'A modern PWA expense tracker app that helps users log and manage their spending with ease. Built with service workers for offline support and a seamless mobile experience, it uses Supabase and Prisma for real-time data syncing and secure backend storage.',
         imagePath: '/images/project3.png',
         isFeatured: false,
     },
     {
         id: 4,
-        title: 'Project Four',
+        title: 'Milbnb',
         description:
-            'A responsive web application that delivers personalized content to users based on their preferences and browsing history.',
+            'An Airbnb-inspired full-stack application with secure user authentication, property listings with image uploads, and real-time bookings. Built with a modern tech stack, it leverages server-side rendering and database management for a seamless user experience.',
         imagePath: '/images/project4.png',
         isFeatured: false,
     },
     {
         id: 5,
-        title: 'Project Five',
+        title: 'Mingo',
         description:
-            'An immersive interactive experience that combines stunning visuals with engaging user interactions.',
+            'A Duolingo-inspired web application featuring progress tracking, interactive lessons, and subscription handling via Stripe. Designed with a focus on state management and database integration, this project delivers a seamless learning experience with a modern and responsive UI.',
         imagePath: '/images/project5.png',
         isFeatured: false,
     },
