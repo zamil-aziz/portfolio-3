@@ -116,8 +116,11 @@ const Experience = () => {
                                             </div>
                                             <div>
                                                 <h1 className='font-semibold text-3xl'>{card.title}</h1>
-                                                <p className='my-5 text-white-50'>🗓️&nbsp;{card.date}</p>
-                                                <p className='text-[#839CB5] italic'>Responsibilities</p>
+                                                <h2 className='text-lg font-medium text-blue-300 my-2'>
+                                                    {card.company}
+                                                </h2>
+                                                <p className='my-2 text-white-50'>🗓️&nbsp;{card.date}</p>
+                                                <p className='text-[#839CB5] italic mt-5'>Responsibilities</p>
                                                 <ul className='list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50'>
                                                     {card.responsibilities.map((responsibility, index) => (
                                                         <li key={index} className='text-lg'>

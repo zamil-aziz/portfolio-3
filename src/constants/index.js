@@ -145,6 +145,7 @@ const expCards = [
         imgPath: '/images/exp1.jpeg',
         logoPath: '/images/exp1.jpeg',
         title: 'Full Stack Web Developer',
+        company: 'Nucleus System Sdn. Bhd.',
         date: 'April 2024 – Present',
         responsibilities: [
             'Built and maintained full-stack web applications using React/Next.js.',
@@ -161,6 +162,7 @@ const expCards = [
         imgPath: '/images/exp2.jpg',
         logoPath: '/images/exp2.jpg',
         title: 'Customer Service Executive',
+        company: 'Denave Sdn. Bhd.',
         date: 'July 2022 - April 2024',
         responsibilities: [
             'Managed customer inquiries and complaints with efficiency and empathy.',
@@ -174,6 +176,7 @@ const expCards = [
         imgPath: '/images/exp3.png',
         logoPath: '/images/exp3.png',
         title: 'Professional Esports Competitor',
+        company: 'Various Teams',
         date: '2010 – 2022',
         responsibilities: [
             'Competed in national and international esports tournaments including PUBG, DOTA 2, StarCraft 2 and HearthStone.',
