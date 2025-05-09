@@ -1,3 +1,4 @@
+// Original data from index.js
 const navLinks = [
     {
         name: 'Work',
@@ -226,6 +227,50 @@ const socialImgs = [
     },
 ];
 
+// New data extracted from ShowcaseSection
+const projectsData = [
+    {
+        id: 1,
+        title: 'Project One',
+        description:
+            'This is a brief description of the featured project. It showcases the main features and functionalities of the project, highlighting its unique aspects and what makes it stand out.',
+        imagePath: '/images/project1.png',
+        isFeatured: true,
+    },
+    {
+        id: 2,
+        title: 'Project Two',
+        description:
+            'A streamlined application that helps users manage their daily tasks with intuitive interface and smart automation.',
+        imagePath: '/images/project2.png',
+        isFeatured: false,
+    },
+    {
+        id: 3,
+        title: 'Project Three',
+        description:
+            'An innovative solution that provides real-time analytics and insightful data visualization for business intelligence.',
+        imagePath: '/images/project3.png',
+        isFeatured: false,
+    },
+    {
+        id: 4,
+        title: 'Project Four',
+        description:
+            'A responsive web application that delivers personalized content to users based on their preferences and browsing history.',
+        imagePath: '/images/project4.png',
+        isFeatured: false,
+    },
+    {
+        id: 5,
+        title: 'Project Five',
+        description:
+            'An immersive interactive experience that combines stunning visuals with engaging user interactions.',
+        imagePath: '/images/project5.png',
+        isFeatured: false,
+    },
+];
+
 export {
     words,
     abilities,
@@ -237,4 +282,5 @@ export {
     techStackIcons,
     techStackImgs,
     navLinks,
+    projectsData,
 };

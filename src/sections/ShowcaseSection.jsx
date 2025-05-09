@@ -2,6 +2,8 @@ import { useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import { projectsData } from '../constants';
+import ProjectCard from '../components/ProjectCard';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,6 +42,10 @@ const ShowcaseSection = () => {
         gsap.fromTo(sectionRef.current, { opacity: 0 }, { opacity: 1, duration: 1.5 });
     }, []);
 
+    // Get featured project and secondary projects
+    const featuredProject = projectsData.find(project => project.isFeatured);
+    const secondaryProjects = projectsData.filter(project => !project.isFeatured);
+
     return (
         <section id='work' ref={sectionRef} className='app-showcase'>
             <div className='w-full'>
@@ -52,95 +58,23 @@ const ShowcaseSection = () => {
                         <div className='h-full flex flex-col w-full'>
                             <div className='image-wrapper relative overflow-hidden rounded-xl flex-grow-0'>
                                 <img
-                                    src='/images/project1.png'
-                                    alt='Featured Project'
+                                    src={featuredProject.imagePath}
+                                    alt={featuredProject.title}
                                     className='w-full h-full object-contain'
                                 />
                             </div>
                             <div className='mt-4 space-y-3 flex-grow'>
-                                <h2 className='text-2xl md:text-3xl font-bold'>Project One</h2>
-                                <p className='text-white-50'>
-                                    This is a brief description of the featured project. It showcases the main features
-                                    and functionalities of the project, highlighting its unique aspects and what makes
-                                    it stand out.
-                                </p>
+                                <h2 className='text-2xl md:text-3xl font-bold'>{featuredProject.title}</h2>
+                                <p className='text-white-50'>{featuredProject.description}</p>
                             </div>
                         </div>
                     </div>
 
                     {/* Secondary Projects Grid */}
                     <div className='xl:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-6 h-full'>
-                        {/* Project 2 */}
-                        <div className='project-card h-full flex flex-col' ref={projectRefs[1]}>
-                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a] flex-grow-0'>
-                                <img
-                                    src='/images/project2.png'
-                                    alt='Project 2'
-                                    className='w-full h-full object-contain p-4'
-                                />
-                            </div>
-                            <div className='mt-3 flex-grow flex flex-col'>
-                                <h2 className='text-lg md:text-xl font-bold mt-2'>Project Two</h2>
-                                <p className='text-sm text-white-50 mt-2 line-clamp-3'>
-                                    A streamlined application that helps users manage their daily tasks with intuitive
-                                    interface and smart automation.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Project 3 */}
-                        <div className='project-card h-full flex flex-col' ref={projectRefs[2]}>
-                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a] flex-grow-0'>
-                                <img
-                                    src='/images/project3.png'
-                                    alt='Project 3'
-                                    className='w-full h-full object-contain p-4'
-                                />
-                            </div>
-                            <div className='mt-3 flex-grow flex flex-col'>
-                                <h2 className='text-lg md:text-xl font-bold mt-2'>Project Three</h2>
-                                <p className='text-sm text-white-50 mt-2 line-clamp-3'>
-                                    An innovative solution that provides real-time analytics and insightful data
-                                    visualization for business intelligence.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Project 4 */}
-                        <div className='project-card h-full flex flex-col' ref={projectRefs[3]}>
-                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a] flex-grow-0'>
-                                <img
-                                    src='/images/project4.png'
-                                    alt='Project 4'
-                                    className='w-full h-full object-contain p-4'
-                                />
-                            </div>
-                            <div className='mt-3 flex-grow flex flex-col'>
-                                <h2 className='text-lg md:text-xl font-bold mt-2'>Project Four</h2>
-                                <p className='text-sm text-white-50 mt-2 line-clamp-3'>
-                                    A responsive web application that delivers personalized content to users based on
-                                    their preferences and browsing history.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Project 5 */}
-                        <div className='project-card h-full flex flex-col' ref={projectRefs[4]}>
-                            <div className='image-wrapper h-64 relative rounded-xl overflow-hidden bg-[#14253a] flex-grow-0'>
-                                <img
-                                    src='/images/project5.png'
-                                    alt='Project 5'
-                                    className='w-full h-full object-contain p-4'
-                                />
-                            </div>
-                            <div className='mt-3 flex-grow flex flex-col'>
-                                <h2 className='text-lg md:text-xl font-bold mt-2'>Project Five</h2>
-                                <p className='text-sm text-white-50 mt-2 line-clamp-3'>
-                                    An immersive interactive experience that combines stunning visuals with engaging
-                                    user interactions.
-                                </p>
-                            </div>
-                        </div>
+                        {secondaryProjects.map((project, index) => (
+                            <ProjectCard key={project.id} project={project} forwardedRef={projectRefs[index + 1]} />
+                        ))}
                     </div>
                 </div>
             </div>
