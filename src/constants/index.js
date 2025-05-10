@@ -1,4 +1,3 @@
-// Original data from index.js
 const navLinks = [
     {
         name: 'Work',
