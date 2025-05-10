@@ -237,23 +237,24 @@ const projectsData = [
         isFeatured: true,
         link: 'https://merchants.eventlah.com/login',
     },
+
     {
         id: 2,
-        title: 'Photobooth App',
-        description:
-            'A fully client-side kiosk photobooth app that enables users to capture, edit, and enhance photos with fun filters and effects. Optimized for touchscreens and event use, it runs entirely in the browser without the need for a backend, ensuring fast and offline-friendly performance.',
-        imagePath: '/images/project2.png',
-        isFeatured: false,
-        link: 'https://pb-zamils-projects.vercel.app',
-    },
-    {
-        id: 3,
         title: 'MyDuitApp',
         description:
             'A modern PWA expense tracker app that helps users log and manage their spending with ease. Built with service workers for offline support and a seamless mobile experience, it uses Supabase and Prisma for real-time data syncing and secure backend storage.',
         imagePath: '/images/project3.png',
         isFeatured: false,
         link: 'https://my-duit-app.vercel.app',
+    },
+    {
+        id: 3,
+        title: 'Photobooth App',
+        description:
+            'A fully client-side kiosk photobooth app—currently in development—that enables users to capture, edit, and enhance photos with fun filters and effects. Optimized for touchscreens and event use, it runs entirely in the browser without the need for a backend, ensuring fast and offline-friendly performance.',
+        imagePath: '/images/project2.png',
+        isFeatured: false,
+        link: 'https://pb-zamils-projects.vercel.app',
     },
     {
         id: 4,
