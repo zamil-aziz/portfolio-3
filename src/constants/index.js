@@ -227,7 +227,7 @@ const socialImgs = [
     },
 ];
 
-// New data extracted from ShowcaseSection
+// Updated projectsData with links
 const projectsData = [
     {
         id: 1,
@@ -236,15 +236,16 @@ const projectsData = [
             'A comprehensive event management portal that enables merchants, administrators, and agents to efficiently manage events, ticket sales, and performance tracking. The portal features tailored user interfaces, real-time analytics, QR ticket scanning, and customizable event pages, all within a modern React-based interface. Working closely with a senior developer, I played a significant role in implementing core functionalities and delivering a high-quality product.',
         imagePath: '/images/project1.png',
         isFeatured: true,
+        link: 'https://merchants.eventlah.com/login',
     },
     {
         id: 2,
         title: 'Photobooth App',
         description:
             'A fully client-side kiosk photobooth app that enables users to capture, edit, and enhance photos with fun filters and effects. Optimized for touchscreens and event use, it runs entirely in the browser without the need for a backend, ensuring fast and offline-friendly performance.',
-
         imagePath: '/images/project2.png',
         isFeatured: false,
+        link: 'https://pb-zamils-projects.vercel.app',
     },
     {
         id: 3,
@@ -253,6 +254,7 @@ const projectsData = [
             'A modern PWA expense tracker app that helps users log and manage their spending with ease. Built with service workers for offline support and a seamless mobile experience, it uses Supabase and Prisma for real-time data syncing and secure backend storage.',
         imagePath: '/images/project3.png',
         isFeatured: false,
+        link: 'https://my-duit-app.vercel.app',
     },
     {
         id: 4,
@@ -261,6 +263,7 @@ const projectsData = [
             'An Airbnb-inspired full-stack application with secure user authentication, property listings with image uploads, and real-time bookings. Built with a modern tech stack, it leverages server-side rendering and database management for a seamless user experience.',
         imagePath: '/images/project4.png',
         isFeatured: false,
+        link: 'https://milbnb.vercel.app',
     },
     {
         id: 5,
@@ -269,6 +272,7 @@ const projectsData = [
             'A Duolingo-inspired web application featuring progress tracking, interactive lessons, and subscription handling via Stripe. Designed with a focus on state management and database integration, this project delivers a seamless learning experience with a modern and responsive UI.',
         imagePath: '/images/project5.png',
         isFeatured: false,
+        link: 'https://duomingo.vercel.app',
     },
 ];
 

@@ -46,6 +46,12 @@ const ShowcaseSection = () => {
     const featuredProject = projectsData.find(project => project.isFeatured);
     const secondaryProjects = projectsData.filter(project => !project.isFeatured);
 
+    const handleProjectClick = link => {
+        if (link) {
+            window.open(link, '_blank', 'noopener noreferrer');
+        }
+    };
+
     return (
         <section id='work' ref={sectionRef} className='app-showcase'>
             <div className='w-full'>
@@ -55,7 +61,10 @@ const ShowcaseSection = () => {
                 <div className='grid grid-cols-1 xl:grid-cols-12 gap-8'>
                     {/* Featured Project (Spans 6 columns) */}
                     <div className='xl:col-span-6 h-full flex' ref={projectRefs[0]}>
-                        <div className='h-full flex flex-col w-full'>
+                        <div
+                            className='h-full flex flex-col w-full cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg rounded-xl overflow-hidden'
+                            onClick={() => handleProjectClick(featuredProject.link)}
+                        >
                             <div className='image-wrapper relative overflow-hidden rounded-xl flex-grow-0'>
                                 <img
                                     src={featuredProject.imagePath}
@@ -63,7 +72,7 @@ const ShowcaseSection = () => {
                                     className='w-full h-full object-contain'
                                 />
                             </div>
-                            <div className='mt-4 space-y-3 flex-grow'>
+                            <div className='mt-4 space-y-3 flex-grow p-4'>
                                 <h2 className='text-2xl md:text-3xl font-bold'>{featuredProject.title}</h2>
                                 <p className='text-white-50'>{featuredProject.description}</p>
                             </div>
