@@ -148,7 +148,7 @@ const expCards = [
         company: 'Nucleus System Sdn. Bhd.',
         date: 'April 2024 – Present',
         responsibilities: [
-            'Built and maintained full-stack web applications using React/Next.js.',
+            'Built and maintained full-stack web applications using React/Next.js with Redux for scalable state management.',
             'Created and integrated RESTful and GraphQL APIs for scalable solutions.',
             'Implemented authentication and authorization systems using JWT and Keycloak.',
             'Implemented database operations and data management within the Next.js framework.',
@@ -232,7 +232,7 @@ const projectsData = [
         id: 1,
         title: 'Eventlah',
         description:
-            'A comprehensive event management portal that enables merchants, administrators, and agents to efficiently manage events, ticket sales, and performance tracking. The portal features tailored user interfaces, real-time analytics, QR ticket scanning, and customizable event pages, all within a modern React-based interface. Working closely with a senior developer, I played a significant role in implementing core functionalities and delivering a high-quality product.',
+            'A comprehensive event management portal built with React, Material UI, and Redux that enables merchants, administrators, and agents to efficiently manage events, ticket sales, and performance tracking. The portal features tailored user interfaces for each user role, real-time analytics, QR ticket scanning, and customizable event pages.',
         imagePath: '/images/project1.png',
         isFeatured: true,
         link: 'https://merchants.eventlah.com/login',
