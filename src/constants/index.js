@@ -183,7 +183,7 @@ const expCards = [
             'Achieved 2nd place at Malaysia AOC Battle of the Visionaries.',
             'Developed advanced problem-solving and strategic thinking skills under pressure.',
             'Worked closely with team members to analyze gameplay, devise tactics, and execute coordinated strategies.',
-            'Translated esports-honed discipline and focus into software development and project execution.',
+            // 'Translated esports-honed discipline and focus into software development and project execution.',
         ],
     },
 ];
