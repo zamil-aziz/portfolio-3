@@ -151,7 +151,7 @@ const expCards = [
             'Built and maintained full-stack web applications using React/Next.js with Redux for scalable state management.',
             'Created and integrated RESTful and GraphQL APIs for scalable solutions.',
             'Implemented authentication and authorization systems using JWT and Keycloak.',
-            // 'Implemented database operations and data management within the Next.js framework.',
+            'Implemented database operations and data management within the Next.js framework.',
             'Collaborated in Agile sprints and contributed to CI/CD pipeline deployments.',
         ],
     },
